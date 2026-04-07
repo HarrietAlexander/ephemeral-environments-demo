@@ -44,7 +44,7 @@ step "run-a-script" {
                 $applicationUrl = "http://$namespace.australiaeast.cloudapp.azure.com"
                 
                 Write-Highlight "Application is available at: [$applicationUrl]($applicationUrl)"
-                EOT
+                    EOT
             Octopus.Action.Script.ScriptSource = "Inline"
             Octopus.Action.Script.Syntax = "PowerShell"
             OctopusUseBundledTooling = "False"
@@ -88,7 +88,7 @@ step "add-link-to-application-on-pull-request" {
                 
                 echo "##octopus[stderr-default]"
                 echo "##octopus[stdout-default]"
-                EOT
+                    EOT
             Octopus.Action.Script.ScriptSource = "Inline"
             Octopus.Action.Script.Syntax = "Bash"
             OctopusUseBundledTooling = "False"
